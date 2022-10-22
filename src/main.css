@@ -1,5 +1,68 @@
 @import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* grid-template-columns: 6rem 1fr;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "aside main"
+    "aside main"
+    "footer footer"
+    ; */
+
+}
+/* nav{
+  grid-area: header;
+} */
+
+/* sidebar */
+aside{
+  position: fixed;
+  width: 8rem; 
+  height: 100vh; 
+  /* grid-area: aside; */
 }
 
+main{
+  display: flex;
+  flex-grow: 1;
+  /* grid-area: main; */
+}
+/* footer{
+  grid-area: footer;
+} */
+
+/* links */
+.link{
+  border-top-right-radius: 15px;
+  cursor: pointer;
+}
+.link.active{
+  background-color: #cbd5e1;
+}
+.link:hover{
+  background-color: #f1f5f9;
+
+}
+
+/* media queries */
+/* @media only screen and (max-width: 700px) {
+  .App{
+    grid-template-columns: 100vw;
+      grid-template-areas:
+        "header" 
+        "main"
+        "main"
+        "main"
+        "aside";
+  }
+  aside{
+    flex-direction: row;
+    width: 100%;
+    height: 5rem;
+    
+  }
+} */
