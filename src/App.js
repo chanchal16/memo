@@ -1,5 +1,7 @@
 import "./tailwind.css";
 import "./main.css";
+import {useRoutes } from "react-router-dom";
+import { ROUTES } from "./routes";
 
 function App() {
   return (
